@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="author" content= "Cristina Fernández Arquisola">
+    <meta name= "description" content= "Esto es una adaptación online interactiva del Índice de Barthel,elaborada por Cristina Fernández">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Índice Barthel</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css" />
+    
+    <script src="https://kit.fontawesome.com/1c7bba2342.js"></script>
+
+    <link rel= "stylesheet" href="style.css">
+
+</head>
+
+<script src="app.js"></script>
+
+<body>
+    <header>
+    <h1>
+        ESCALAS DE ENFERMERÍA </h1> </header>
+    <h2>
+        ÍNDICE DE BARTHEL
+    </h2>
+
+    <p>El Índice de Barthel es un instrumento que  permite valorar la capacidad de las personas de realizar 10 actividades básicas de la vida diaria (AVBD).
+    </p>
+
+    <p>En función del resultado, podemos estimar el grado de dependencia o independencia para realizar esas actividades. Al cuantificar el grado de dependencia permite realizar un seguimiento de la evolución de los pacientes.</p>
+    <p>
+
+    <h3><u></u>Instrucciones:</u> </h3>
+    <p>
+    Rellene las casillas correspondientes y la aplicación realizará de manera automática el cálculo de la puntuación total.
+    </p>
+
+<form id="form1">
+    <div>
+        <div class="titulos" id="titulos">
+            <fieldset> 
+                <label><b>1. COMER:</b></label>
+                <br>
+
+                <div class="contenido" id="contenido">
+                    <input name="radiogroup1" class="casilla" id="radio1.1" type="radio" value="0" checked> Incapaz.
+                </div>
+                
+                <div class="contenido" id="contenido">
+                    <input name="radiogroup1" class="casilla" id="radio1.2" type="radio" value="5"> Necesita ayuda para cortar, extender mantequilla, usar condimentos...   
+                </div>       
+
+                <div class="contenido" id="contenido">
+                    <input name="radiogroup1" class="casilla" id="radio1.3" type="radio" value="10" > Independiente.
+                </div>
+                
+             </fieldset>
+
+        </div> 
+    
+        <div class="titulos" id="titulos">
+            <fieldset>
+                <label><b>2. TRASLADARSE ENTRE LA SILLA Y LA CAMA:</b></label> <br>
+
+                <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup2" class="casilla" id="radio2.1" type="radio" value="0" checked> Incapaz, no se mantiene sentado.
+                
+                </div>
+
+                <div class="contenido" id="contenido">
+                
+                        <input name="radiogroup2" class="casilla" id="radio2.2" type="radio" value="5"> Necesita ayuda importante (una persona entrenada o dos), puede estar sentado.
+                    
+                </div>
+
+                <div class="contenido" id="contenido">
+
+                        <input name="radiogroup2" class="casilla" id="radio2.3" type="radio" value="10"> Necesita algo de ayuda (una pequeña ayuda o ayuda verbal).
+                    
+                </div>
+
+                <div class="contenido" id="contenido">
+                
+                        <input name="radiogroup2" class="casilla" id="radio2.4" type="radio" value="15"> Independiente.
+                
+                </div>
+            </fieldset>
+        </div>
+        
+
+        <div class="titulos" id="titulos">
+            <fieldset>
+            <label><b>3. ASEO PERSONAL:</b></label> <br>
+
+            <div class="contenido" id="contenido">
+
+                <input name="radiogroup3" class="casilla" id="radio3.1" type="radio" value="0" checked> Necesita ayuda con el aseo personal.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup3" class="casilla" id="radio3.2" type="radio" value="5"> Independiente para lavarse la cara, las manos y los dientes, peinarse y afeitarse.
+                
+            </div>
+        </fieldset>
+
+        </div>
+
+
+        <div class="titulos" id="titulos">
+        <fieldset>
+            <label><b>4. USO DEL RETRETE:</b></label><br>
+
+            <div class="contenido" id="contenido">
+        
+                <input name="radiogroup4" class="casilla" id="radio4.1" type="radio" value="0" checked> Dependiente.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup4" class="casilla" id="radio4.2" type="radio" value="5"> Necesita alguna ayuda, pero puede hacer algo solo.
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup4" class="casilla" id="radio4.3" type="radio" value="10"> Independiente (entrar y salir, limpierse y vestirse).
+                
+            </div>
+        </fieldset>
+        </div>
+
+        <div class="titulos" id="titulos">
+        <fieldset>
+            <label><b>5. BAÑARSE/ DUCHARSE:</b></label><br>
+
+            <div class="contenido" id="contenido">
+        
+                <input name="radiogroup5" class="casilla" id="radio5.1" type="radio" value="0" checked> Dependiente.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup5" class="casilla" id="radio5.2" type="radio" value="5"> Independiente para para bañarse o ducharse.
+                
+            </div>
+
+        </fieldset>
+        </div>
+
+        <div class="titulos" id="titulos">
+        <fieldset>
+            <label><b>6. DESPLAZARSE:</b></label><br>
+
+            <div class="contenido" id="contenido">
+        
+                <input name="radiogroup6" class="casilla" id="radio6.1" type="radio" value="0" checked> Inmóvil.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup6" class="casilla" id="radio6.2" type="radio" value="5"> Independiente en silla de ruedas en 50m.
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup6" class="casilla" id="radio6.3" type="radio" value="10"> Anda con pequeña ayuda de una persona (física o verbal).
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup6" class="casilla" id="radio6.4" type="radio" value="15"> Independiente al menos 5om, con cualquier tipo de muleta, excepto andador.
+                
+            </div>
+        </fieldset>
+        </div>
+
+        <div class="titulos" id="titulos">
+        <fieldset>
+            <label><b>7. SUBIR Y BAJAR ESCALERAS:</b></label><br>
+
+            <div class="contenido" id="contenido">
+        
+                <input name="radiogroup7"  class="casilla" id="radio7.1" type="radio" value="0" checked> Incapaz.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup7"  class="casilla" id="radio7.2" type="radio" value="5"> Necesita ayuda física o verbal, puede llevar cualquier tipo de muleta. 
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup7" class="casilla" id="radio7.3" type="radio" value="10"> Independiente para subir y bajar.
+                
+            </div>
+        </fieldset>
+        </div>
+
+
+        <div class="titulos" id="titulos">
+        <fieldset>
+            <label><b>8. VESTIRSE Y DESVESTIRSE:</b></label><br>
+
+            <div class="contenido" id="contenido">
+
+                <input name="radiogroup8" class="casilla" id="radio8.1" type="radio" value="0" checked> Dependiente.
+            
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup8" class="casilla" id="radio8.2" type="radio" value="5"> Necesita ayuda, pero puede hacer la mitad aproximadamente, sin ayuda.
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+            
+                    <input name="radiogroup8" class="casilla" id="radio8.3" type="radio" value="10"> Independiente, incluyendo botones, cremalleras, cordones...
+                
+            </div>
+        </fieldset>
+        </div>
+
+        <div class="titulos" id="titulos"></div>
+        <fieldset>
+
+            <label><b>9. CONTROL DE HECES:</b></label><br>
+
+            <div class="contenido" id="contenido">
+
+                <input name="radiogroup9" class="casilla" id="radio9.1" type="radio" value="0" checked> Incontinente (o necesita que le suministren enema). 
+
+            </div>
+
+            <div class="contenido" id="contenido">
+
+                    <input name="radiogroup9" class="casilla" id="radio9.2" type="radio" value="5"> Accidente excepcional (uno por semana).
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+
+                    <input name="radiogroup9" class="casilla" id="radio9.3" type="radio" value="10"> Continente.
+                
+            </div>
+        </fieldset>
+        </div>
+
+        <div class="titulos" id="titulos"></div>
+        <fieldset>
+
+            <label><b>10. CONTROL DE ORINA:</b></label><br>
+
+            <div class="contenido" id="contenido">
+
+                <input name="radiogroup10" class="casilla" id="radio10.1" type="radio" value="0" checked> Incontinente, o sondado incapaz de cambiarse la bolsa.
+
+            </div>
+
+            <div class="contenido" id="contenido">
+
+                    <input name="radiogroup10" class="casilla" id="radio10.2" type="radio" value="5"> Accidente excepcional (máximo uno/24 horas).
+                
+            </div>
+
+            <div class="contenido" id="contenido">
+
+                <input name="radiogroup10" class="casilla" id="radio10.3" type="radio" value="10"> Continente, durante al menos 7 días.
+            
+            </div>
+        </fieldset>
+        </div>
+
+    </div>
+    <div class="botoncalculo">
+        <button type="button" id="button"> Calcular resultado 
+        </button>
+                    
+    </div>
+
+    <div class="puntuacion">
+        Puntuación total:<br> <input class="puntuaciontotal" type="text" placeholder="Resultado" id="puntuaciontotal" readonly/>
+
+
+    </div>
+
+    <div class="interpr">
+            Interpretación del resultado: <br><input class="interpretacion" id="interpretacion" placeholder="Interpretación" readonly/>
+    
+    </div>
+    
+    <div class="resultados">
+
+        <input type="text" placeholder="Puntuación1" id="puntuacion1" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación2" id="puntuacion2" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación3" id="puntuacion3" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación4" id="puntuacion4" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación5" id="puntuacion5" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación6" id="puntuacion6" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación7" id="puntuacion7" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación8" id="puntuacion8" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación9" id="puntuacion9" readonly hidden/>
+
+        <input type="text" placeholder="Puntuación10" id="puntuacion10" readonly hidden/>
+
+
+    </div>
+
+
+    
+
+
+</div>
+
+
+    
+
+
+
+
+</form>
+
+
+
+
+    <footer class= "bajo">
+
+        <h6> Desarrollado por Cristina Fernández Arquisola 
+            <br>
+            (2019)
+            <br>
+        </h6>
+
+        <h6> La autora no se hace responsable de las consecuencias de su uso <br></br>
+
+        Versión 1.1.4.198<br></br></h6>
+
+
+
+
+    </footer>
+
+</body>
+</html>
